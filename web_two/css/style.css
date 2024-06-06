@@ -118,15 +118,12 @@ button {
 .card-img,img{
   width: 100%;
   height: 100%; 
-
   object-fit: cover;
 }
 .card > div > p {
   position: absolute;  
-
   bottom: 0;
   background-color: #996b67b6;  
-
   color: white;
   padding: 10px;
   width: 100%;
@@ -135,7 +132,6 @@ button {
   width: 100%;
   height: auto;
   display: flex;  
-
   align-items: center;
   flex-direction: column;
 }
@@ -229,7 +225,7 @@ ul{
     width: 100%;
   }
   .gallery{
-    width: 100%;
+    width: 600px;
   }
   .gallery>div{
     width: 150px;
