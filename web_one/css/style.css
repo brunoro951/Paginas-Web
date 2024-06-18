@@ -130,12 +130,14 @@ h1 {
   font-weight: 400;
   color: #90b8acb3;
 }
-
+.container-align{
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
 .container-description {
-  width: auto;
+  width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 20px;
 }
 
