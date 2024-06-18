@@ -193,14 +193,14 @@ h2 {
 footer{
   width: 100%;
   height: auto;
-background-color: #996b67;  margin-top: 20px;
+  background-color: #996b67;  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
 }
 ul{
   list-style: none;
-  font-size: 2vw;
+  font-size: 15px;
   margin: 10px 0 10px 0;
   line-height: 1.5;
   color: white;
@@ -236,6 +236,9 @@ ul{
   }
   .container-gallery{
     width: 100%;
+  }
+  ul{
+    font-size: 9px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -298,5 +301,8 @@ ul{
   }
   .parrafo{
     width: 100%;
+  }
+  ul{
+    font-size: 7px;
   }
 }
