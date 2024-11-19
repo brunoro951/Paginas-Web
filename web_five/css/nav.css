@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containers,
+.container-content {
+  width: 100%;
+  height: 70vh;
+  
+}
+
+.containers,
+header {
+  display: flex;
+
+}
+.containers {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  backdrop-filter: blur(5px);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+nav{
+  margin-right: 20px;
+}
+header>a{
+  margin-left: 20px;
+}
+.logo {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-logo);
+}
+.logo>img{
+  width: 100px;
+}
+#check {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-logo);
+}
+
+.navbar a {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 1.1rem;
+}
+.navbar a:nth-child(5) {
+  border: 2px solid rgb(1, 1, 1);
+  padding: 10px;
+}
+.icons {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-logo);
+  display: none;
+}
+
+@media only screen and (max-width: 575px) {
+
+  .containers {
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  .icons {
+    display: block;
+  }
+
+  header {
+    padding: 1.3rem 5%;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #menu-close {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(208, 208, 208);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    height: 17.7rem;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .icons #menu-close {
+    display: none;
+  }
+  .container-services {
+    flex-wrap: wrap;
+  }
+}
